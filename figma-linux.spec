@@ -1,6 +1,6 @@
 Name:       figma-linux
 Version:    0.6.1
-Release:    1
+Release:    2
 Summary:    RPM package for figma-linux
 License:    GPL2.0
 
@@ -37,6 +37,9 @@ unzip -q "%{SOURCE0}" -d $RPM_BUILD_ROOT/opt/%{name}
 
 ls -la $RPM_BUILD_ROOT
 ls -la $RPM_BUILD_ROOT/opt/%{name}
+
+%post
+ln -s /opt/figma-linux/figma-linux /usr/bin/figma-linux
 
 %files
 /opt/figma-linux/
