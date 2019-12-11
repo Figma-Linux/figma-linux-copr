@@ -19,6 +19,8 @@ Source10:       https://raw.githubusercontent.com/ChugunovRoman/%{name}/master/r
 Source11:       https://raw.githubusercontent.com/ChugunovRoman/%{name}/master/resources/icons/384x384.png
 Source12:       https://raw.githubusercontent.com/ChugunovRoman/%{name}/master/resources/icons/512x512.png
 
+BuildRequires: unzip
+
 %description
 RPM package for figma-linux
 
